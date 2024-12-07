@@ -1,0 +1,208 @@
+﻿* {
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid lightcoral; */
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: OutfitMid;
+  src: url(./assets/fonts/outfit/static/Outfit-Medium.ttf);
+}
+
+@font-face {
+  font-family: YoungSerif;
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+
+  main {
+    border-radius: 20px;
+    width: 736px;
+    margin-inline: auto;
+    margin-top: 6rem;
+    background-color: white;
+    padding: 2.5rem;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-family: YoungSerif, sans-serif;
+      font-weight: 400;
+      font-size: 2.5rem;
+      margin-top: 1.5rem;
+    }
+
+    p.dish_description {
+      margin-top: 1rem;
+      font-size: 16px;
+      font-family: Outfit, sans-serif;
+      color: hsla(0, 0%, 0%, 0.6);
+    }
+
+    .prepare_description {
+      width: 100%;
+      margin-inline: auto;
+      margin-top: 1rem;
+      background-color: #fff7fc;
+      padding: 1.5rem;
+      border-radius: 10px;
+      font-family: Outfit, sans-serif;
+
+      h4 {
+        font-size: 1.25rem;
+        color: hsl(332, 51%, 32%);
+        font-weight: 600;
+      }
+      
+      ul {
+        
+        list-style-position: inside;
+        color: hsla(0, 0%, 0%, 0.6);
+        
+        li {
+          margin-block: 0.8rem;
+          margin-left: 5px;
+        }
+
+        li p {
+          display: inline;
+          margin-left: 1rem;
+        }
+
+        li span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    section h2{
+      color: hsl(14, 45%, 36%);
+      font-size: 1.75rem;
+      font-family: YoungSerif, sans-serif;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    section.ingredients {
+      ul {
+        list-style-position: inside;
+        li {
+          margin-block: 0.5rem;
+        }
+      }
+
+      li p {
+        display: inline;
+        font-family: Outfit, sans-serif;
+        margin-left: 1rem;
+        color: hsla(0, 0%, 0%, 0.6);
+      }
+      margin-top: 2rem;
+    }
+
+    hr {
+      margin-block: 2rem;
+      color: hsla(0, 0%, 0%, 0.1);
+    }
+    
+    section.instructions {
+      table {
+        font-family: Outfit, sans-serif;
+        
+        tr > td:nth-child(1) {
+          color: hsl(14, 45%, 36%);
+          font-weight: bold;
+          vertical-align: text-top;
+          padding-right: 1rem;
+        }
+
+        tr > td:nth-child(2) {
+          color: hsla(0, 0%, 0%, 0.6);
+          span {
+            font-weight: bold;
+          }
+        }
+
+        border-spacing: 0 0.75rem;
+      }
+    }
+
+    section.nutrition {
+      p {
+        color: hsla(0, 0%, 0%, 0.6);
+        font-family: Outfit, sans-serif;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 2rem;
+        font-family: Outfit, sans-serif;
+        color: hsla(0, 0%, 0%, 0.6);
+
+        tr:not(:last-child) td{
+            border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+        }
+
+        tr td {
+          padding-block: 1rem;
+        }
+
+        tr td:first-child {
+          padding-left: 1rem;
+        }
+
+        tr td:nth-child(2) {
+          color: hsl(14, 45%, 36%);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 739px) {
+  body main {
+    height: 100vh;
+    width: 100%;
+    margin-block: 0;
+    padding: 0;
+    border-radius: 0;
+
+    h1 {
+      font-size: 2.2rem;
+      line-height: 2.5rem;
+    }
+
+    p.dish_description {
+      text-align: left;
+    }
+
+    img {
+      border-radius: 0;
+    }
+    
+    div.dish_information {
+      padding-inline: 2rem;
+    }
+
+    /* div.prepare_description ul li {
+      margin-left: 0.5rem;
+      p {
+        text-wrap: wrap;
+      }
+    } */
+  }
+}
