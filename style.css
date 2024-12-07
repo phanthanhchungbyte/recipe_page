@@ -3,7 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: 1px solid lightcoral; */
+  border: 1px solid lightcoral;
 }
 
 @font-face {
@@ -180,29 +180,24 @@ body {
     margin-block: 0;
     padding: 0;
     border-radius: 0;
-
-    h1 {
-      font-size: 2.2rem;
-      line-height: 2.5rem;
-    }
-
-    p.dish_description {
-      text-align: left;
-    }
-
-    img {
-      border-radius: 0;
-    }
     
     div.dish_information {
       padding-inline: 2rem;
+      background-color: white;
+
+      h1 {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+      }
+  
+      p.dish_description {
+        text-align: left;
+      }
+  
+      img {
+        border-radius: 0;
+      }
     }
 
-    /* div.prepare_description ul li {
-      margin-left: 0.5rem;
-      p {
-        text-wrap: wrap;
-      }
-    } */
   }
 }
